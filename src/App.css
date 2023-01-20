@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.registerBtn{
+  background-color: #5c8cf5;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.descText{
+  margin-top: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sceneImage{
+  width: 75%;
+  height: 75%;
+}
+
+.loginPage{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323c55;
+}
+
+.loginForms{
+  border-radius: 3px;
+  background-color: #a2d4d2;
+  padding: 10%;
+}
+
+.accountText{
+  margin-top: 1rem;
+}
+
+.resetPassBtn{
+  color: black;
+  margin-right: 0.5rem;
+}
+
+.logoutBtn{
+  color: red;
+}
+
+.todoList{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.createTodoBtn{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todoCard{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cancelText{
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px){
+  .contentDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  to {
-    transform: rotate(360deg);
+
+  .descText{
+    text-align: start;
+    padding-left: 10rem;
+  }
+
+  .loginTextBtn:hover{
+    cursor: pointer;
+  }
+
+  .loginForms{
+    border-radius: 5px;
+    padding: 5%;
+  }
+
+  .accountText:hover{
+    cursor: pointer;
+    color: white;
+  }
+
+  .resetPassBtn:hover{
+    cursor: pointer;
+  }
+
+  .logoutBtn:hover{
+    cursor: pointer;
+  }
+
+  .cancelText:hover{
+    cursor: pointer;
+    color: white;
   }
 }
